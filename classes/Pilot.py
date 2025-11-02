@@ -13,7 +13,7 @@ class Pilot:
     def __init__(self,_pilotid:int,_pilotFullname:str,_pilotBirthdate: date):
         self.id = _pilotid
         self.Fullname = _pilotFullname
-        self.birthdate = _pilotBirthdate
+        self.BirthDate = _pilotBirthdate
 
 class SuperPilot(Pilot):
     superPilotName: str

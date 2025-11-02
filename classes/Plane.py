@@ -10,6 +10,9 @@ class Plane:
     def __init__(self,_name: str,_pilot:Pilot):
         self.Name=_name
         self.FlightPilot=_pilot
+        print(self.Name)
 
     def BoardPassangerSeat(self,_seat:Seat):
         self.PlaneSeats.append(_seat)
+        self.Name = "assaf"
+        print(f"Adding Seat ID: {_seat.PassengerSitting.FullName}")
