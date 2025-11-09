@@ -13,7 +13,14 @@ class Animal:
         self.isPreditor=_isPreditor
         self.Age=_age
 
+    def __str__(self):
+        returnString = f"Name:{self.Name}, isMamel:{self.isMamel}"
+        return returnString
+    
     def feed(self,_food:Food):
+        if (not self.isHungry):
+            raise Exception("This Animal is not hungry")
+        
         if (self.isPreditor and _food.isVegi):
             raise Exception("This Animal cannot eat vegitarion food")
             
