@@ -1,6 +1,7 @@
 from Zoo.Animal import Animal
 from Zoo.Cage import Cage
 from Zoo.Food import Food
+import logging
 newAnimal = Animal("Zebra",True,False,21)
 _mamel = True
 _vegitarian = True
